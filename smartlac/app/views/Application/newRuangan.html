@@ -1,12 +1,19 @@
-Masukkan info Ruangan</br>
-<form name="objruang" action='@{Application.buatBaru()}'>
-ID <br>
- <input type="int" name="objruang.id"/><br>
-Jumlah Kursi : <br>
-<input type="int" name="objruang.jmlkursi"/><br>  
-Nama Ruangan : <br>
-<input type="String" name="objruang.nama"/><br>
-Jumlah lampu :<br>
-<input type="int" name="objruang.jmllampu"/><br>
-<input type="submit"  value="kirim"/>
+      <html>
+        <head>
+          <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+        </head>
+        <body>
+          <div>Masukkan info Ruangan/div>
+        
+          <form name="objruang" action="@{Application.buatBaru()}">
+            ID <br>
+            <input name="objruang.id" type="int"><br>
+            Jumlah Kursi : <br>
+            <input name="objruang.jmlkursi" type="int"><br>
+            Nama Ruangan : <br>
+            <input name="objruang.nama" type="String"><br>
+            Jumlah lampu :<br>
+            <input name="objruang.jmllampu" type="int"><br>
+            <input value="kirim" type="submit">
 </form>
+</body></html>
