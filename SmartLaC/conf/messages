@@ -1,0 +1,13 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+namagedung=Nama Gedung
+nama=Nama
+jmlkursi=Jumlah Kursi
+jmllampu=Jumlah Lampu
+objgedung=Gedung
+objruang=Id Ruangan
+Gedungs=Gedung
+lampus=Lampu
+ruangans=Ruangan
+sensors=Sensors

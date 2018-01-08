@@ -1,0 +1,88 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SmartLaC</title>
+
+<!-- CSS -->
+<link href="@{'public/admintema/style/css/home-transdmin.css'}" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="@{'public/admintema/style/css/ie6.css'}" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="@{'public/admintema/style/css/ie7.css'}" /><![endif]-->
+
+<!-- JavaScripts-->
+<script type="text/javascript" src="@{'public/admintema/style/js/jquery.js'}"></script>
+<script type="text/javascript" src="@{'public/admintema/style/js/jNice.js'}"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+    	<!-- h1 tag stays for the logo, you can use the a tag for linking the index page -->
+    	<div class="logo"><h1><a href="#"><span>Transdmin Light</span></a></h1></div>
+    	
+        
+        <!-- You can name the links with lowercase, they will be transformed to uppercase by CSS, we prefered to name them with uppercase to have the same effect with disabled stylesheet -->
+        <ul id="mainNav">
+        	<!-- Use the "active" class for the active menu item  -->
+        	<li><a href="@{Application.index()}">Home</a></li>
+        	<li><a href="/admin/">Admin</a></li>
+        	<li><a href="#">About</a></li>
+        	<li class="logout"><a href="#">LOGOUT</a></li>
+        </ul>
+        <!-- // #end mainNav -->
+        
+        <div id="containerHolder">
+			<div id="container">
+        		<div id="sidebar">
+                	<ul class="sideNav">
+                	
+                	<!-- class="active"-->
+                	<li><a class="active" href="@{Application.index()}"><strong>Analisis</strong></a></li>
+                	<li><a href="@{Application.rumusan_masalah()}">Perumusan Masalah</a></li>
+                	<li><a href="@{Application.identifikasi_masalah()}">Identifikasi Masalah</a></li>
+                	<li><a href="@{Application.problem_statement()}">Problem Statement</a></li>
+                	<li><a href="@{Application.fr()}">Functional Req</a></li>
+                	<li><a href="@{Application.nfr()}">Non Functional Req</a></li>
+                  	
+                  	<li><a class="active" href="@{Application.index()}"><strong>Perumusan Req</strong></a></li>
+                  		 <li><a href="@{Application.textual()}">Textual analisis</a></li>
+                  		  <li><a href="@{Application.usecase()}">Use Case</a></li>
+                
+                    <li><a class="active" href="@{Application.index()}"><strong>Identifikasi Class</strong></a></li>
+                      <ul>
+                      <li><a href="@{Application.potclass()}">Potensial Class (awal)</a></li>
+                      <li><a href="@{Application.refind()}">Refinement some class</a></li>
+                      <li><a href="@{Application.potclassfin()}">Potensial Class (Final)</a></li>
+                      <li><a href="@{Application.diagramclass()}">Diagram Class</a></li>
+                      </ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sensors</a></li>
+                   
+                 <!--  <li><a href="#">Events</a></li> -->
+                    </ul>
+                    <!-- // .sideNav -->
+                </div>    
+                <!-- // #sidebar -->
+                
+                <!-- h2 stays for breadcrumbs -->
+                
+                
+                <div id="main">
+                	
+                #{doLayout/}
+                </div>
+                <!-- // #main -->
+                
+                <div class="clear"></div>
+            </div>
+            <!-- // #container -->
+        </div>	
+        <!-- // #containerHolder -->
+        
+        <p id="footer">Rekayasa Perangkat Lunak 2017 - Teknik elektro Unsoed - Template by <a href="http://www.perspectived.com">www.perspectived.com</a></p>
+    </div>
+    <!-- // #wrapper -->
+</body>
+</html>
+
+

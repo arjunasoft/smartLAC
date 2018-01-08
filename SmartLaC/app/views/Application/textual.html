@@ -1,0 +1,16 @@
+#{extends 'home-tema.html' /}
+<!--  -->
+<link href="@{'public/stylesheets/main.css'}" rel="stylesheet" type="text/css" media="screen" />
+<div class="user">
+
+<h1>Textual Analisis</h1>
+<p>Sistem pengendalian lampu ruang kelas otomatis (SmartLaC) adalah sebuah sistem yang berfungsi untuk mengendalikan lampu ruangan secara otomatis berdasar kondisi tertentu.</p>
+<p>Sistem akan menyalakan lampu secara berurutan sesuai dengan jumlah orang yang berada di ruangan, di mulai dari lampu kiri depan sampai kanan belakang, dan mematikan lampu dengan cara yang sebaliknya. Jumlah orang yang berada di dalam ruangan, dihitung oleh sistem berdasarkan data orang masuk dan keluar yang diperoleh dari sensors. Sensors tersebut di pasang di depan pintu. sistem ini juga terintegrasi dengan internet untuk proses monitoring. Proses monitoring dilakukan dengan memantau display monitor SmartLaC yang tersedia. Jika terjadi kejanggalan (Kondisi yang tidak seharusnya pada display monitor SmartLaC ) maka admin akan memicu sistem keamanan untuk bekerja dan membunyikan alarm.</p>
+<p>Sistem ini terdiri dari 2 aktor yaitu admin, dan orang. admin bertugas untuk mengkonfigurasi sistem (menentukan total lampu, dan menentukan nilai tentu), dan memonitor sistem. Nilai tentu merupakan banyaknya orang yang dapat ditampung oleh satu lampu. sedangkan orang bertugas untuk memicu sistem bekerja.</p>
+
+</div>
+
+<div class="textual">
+<img src="@{'public/images/usecase1.png'}">
+
+</div>
